@@ -21,7 +21,7 @@ This project is a simple web api built using ASP.NET, and connecting to an SQL S
 
 ## Published Images
 
-The images are published on Github Container Registry: https://github.com/appvia/todo-app/pkgs/container/aspnet-app
+The images are published on Github Container Registry: https://github.com/appvia/aspnet-app/pkgs/container/aspnet-app
 
 ## Contributing
 

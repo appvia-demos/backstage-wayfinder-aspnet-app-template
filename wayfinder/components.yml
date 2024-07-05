@@ -12,7 +12,7 @@ spec:
           - name: MSSQL_SA_PASSWORD
             value: Password123
           - name: ACCEPT_EULA
-            value: Y
+            value: "Y"
         image: mcr.microsoft.com/mssql/server:2022-latest
         name: sqlserver
         ports:
@@ -22,7 +22,6 @@ spec:
             protocol: TCP
     replicas: 1
     tls: true
-  key: sqlserver
   name: sqlserver
   type: Container
 ---
@@ -41,7 +40,7 @@ spec:
           - name: MSSQL_HOSTNAME
             value: sqlserver
           - name: MSSQL_PORT
-            value: 1433
+            value: "1433"
           - name: MSSQL_DBNAME
             value: MainDemo
           - name: MSSQL_USERNAME
@@ -62,6 +61,5 @@ spec:
     tls: true
   dependsOn:
     - sqlserver
-  key: app
   name: app
   type: Container

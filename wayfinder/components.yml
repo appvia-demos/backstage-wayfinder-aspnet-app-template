@@ -20,6 +20,9 @@ spec:
             expose: true
             name: sqlserver
             protocol: TCP
+        securityContext:
+          runAsGroup: 10001
+          runAsUser: 10001
     replicas: 1
     tls: true
   name: sqlserver
